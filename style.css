@@ -1,18 +1,32 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Barrio', cursive;
+  font-family: 'Playball', cursive;
 }
+
+/*
+ * I would have bought you real chocolates
+ * But you know I'm broke
+ */
+
 body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
   text-align:center;
-  background-color: #f7f3d8;
+  background: linear-gradient(-135deg, white, white 70%, rgba(0, 0, 0, 0.7));
 }
-body * { margin-top: 15vh }
+body > * { margin-top: 15vh }
 @media (max-width: 768px) {
-  body * { margin-top: 10vh }
+  body > * { margin-top: 10vh }
 }
 h1 { font-size: 2.7rem }
-p { color: tomato }
+p { font-size: 1.7rem }
+p.wish {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+img { width: 20vw }
